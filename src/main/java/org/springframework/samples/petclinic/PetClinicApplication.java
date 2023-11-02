@@ -20,6 +20,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportRuntimeHints;
 
+import com.vaadin.flow.component.page.AppShellConfigurator;
+import com.vaadin.flow.theme.Theme;
+
 /**
  * PetClinic Spring Boot Application.
  *
@@ -28,7 +31,8 @@ import org.springframework.context.annotation.ImportRuntimeHints;
  */
 @SpringBootApplication
 @ImportRuntimeHints(PetClinicRuntimeHints.class)
-public class PetClinicApplication {
+@Theme(value = "hilla-petclinic")
+public class PetClinicApplication implements AppShellConfigurator {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PetClinicApplication.class, args);

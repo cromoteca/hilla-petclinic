@@ -18,10 +18,10 @@ export default function MainLayout() {
           <h1 className="text-l m-0">Hilla Pet Clinic</h1>
           <nav>
             <NavLink className={navLinkClasses} to="/">
-              Hello World
+              View Veterinarians
             </NavLink>
-            <NavLink className={navLinkClasses} to="/about">
-              About
+            <NavLink className={navLinkClasses} to="/edit">
+              Edit Veterinarians
             </NavLink>
           </nav>
         </header>
